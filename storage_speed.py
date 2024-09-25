@@ -94,11 +94,11 @@ def get_windows_devices():
         logger.error(f"Error detecting devices on Windows: {e}")
         return []
 
-# Function to detect available devices on macOS
+# Function devices on macOS
 def get_macos_devices():
     try:
         devices = []
-        result = subprocess.run(['diskutil', 'list'], stdout=subprocess.PIPE, text=True)
+        run(['diskutil', 'list'], stdout=subprocess.PIPE, text=True)
         lines = result.stdout.splitlines()
         for line in lines:
             if '/dev/disk' in line:
