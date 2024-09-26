@@ -31,7 +31,7 @@ jobs:
 
     - name: Run speed test script
       run: |
-        python path/to/your/script.py
+        python storage_speed_test.py
 
     # Optional: Add linting or other quality checks
     - name: Run lint
