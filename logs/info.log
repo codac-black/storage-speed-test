@@ -1,0 +1,21 @@
+2024-09-24 10:39:59,604 - INFO - Write speed on D:\: 27.86 MB/s
+2024-09-24 10:40:18,805 - INFO - Read speed on D:\: 1000.09 MB/s
+2024-09-24 10:41:28,456 - ERROR - Error in write_speed_test: [Errno 13] Permission denied: 'C:\\speed_test_file'
+2024-09-26 09:08:55,234 - INFO - Terminate flag set, stopping pending operations...
+2024-09-26 09:08:55,270 - INFO - Write operation terminated by user.
+2024-09-26 09:08:55,273 - INFO - Write speed on D:\: 19.37 MB/s
+2024-09-26 09:09:14,214 - INFO - Read operation terminated by user.
+2024-09-26 09:09:14,456 - INFO - Read speed on D:\: 0.00 MB/s
+2024-09-26 09:09:19,233 - INFO - Program exited successfully. No pending operations.
+2024-09-26 09:11:09,127 - INFO - Write speed on D:\: 8.48 MB/s
+2024-09-26 09:11:59,098 - INFO - Read speed on D:\: 17.00 MB/s
+2024-09-26 09:14:44,642 - INFO - Terminate flag set, stopping pending operations...
+2024-09-26 09:14:47,650 - INFO - Program exited successfully. No pending operations.
+2024-09-26 09:27:41,135 - INFO - Terminate flag set, stopping pending operations...
+2024-09-26 09:27:44,161 - INFO - Program exited successfully. No pending operations.
+2024-09-26 09:28:26,428 - INFO - Write speed on D:\: 14.71 MB/s
+2024-09-26 09:28:29,463 - INFO - Read speed on D:\: 42.97 MB/s
+2024-09-26 09:29:00,184 - INFO - Write speed on D:\: 21.53 MB/s
+2024-09-26 09:29:27,586 - INFO - Read speed on D:\: 53.90 MB/s
+2024-09-26 09:29:35,188 - INFO - Terminate flag set, stopping pending operations...
+2024-09-26 09:29:38,199 - INFO - Program exited successfully. No pending operations.

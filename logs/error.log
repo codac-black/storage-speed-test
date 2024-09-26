@@ -1,0 +1,1 @@
+2024-09-24 10:41:28,456 - ERROR - Error in write_speed_test: [Errno 13] Permission denied: 'C:\\speed_test_file'
