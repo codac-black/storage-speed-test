@@ -7,18 +7,40 @@ import psutil
 import npyscreen
 from tqdm import tqdm
 
+# Ensure the logs directory exists
+logs_dir = './logs'
+if not os.path.exists(logs_dir):
+    os.makedirs(logs_dir)
+
 # Setup logger
-logger = logging.getLogger('speed_test_logger')
+logger = logging.getLogger('storage_speed_test_logger')
 logger.setLevel(logging.INFO)
-file_handler = logging.FileHandler('./logs/info.log')
-error_handler = logging.FileHandler('./logs/error.log')
+
+# Setup file handlers for logging
+file_handler = logging.FileHandler(os.path.join(logs_dir, 'info.log'))
+error_handler = logging.FileHandler(os.path.join(logs_dir, 'error.log'))
+
 file_handler.setLevel(logging.INFO)
 error_handler.setLevel(logging.ERROR)
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 file_handler.setFormatter(formatter)
 error_handler.setFormatter(formatter)
+
 logger.addHandler(file_handler)
 logger.addHandler(error_handler)
+
+# # Setup logger
+# logger = logging.getLogger('speed_test_logger')
+# logger.setLevel(logging.INFO)
+# file_handler = logging.FileHandler('./logs/info.log')
+# error_handler = logging.FileHandler('./logs/error.log')
+# file_handler.setLevel(logging.INFO)
+# error_handler.setLevel(logging.ERROR)
+# formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+# file_handler.setFormatter(formatter)
+# error_handler.setFormatter(formatter)
+# logger.addHandler(file_handler)
+# logger.addHandler(error_handler)
 
 # Function to measure write speed with a progress bar
 def write_speed_test(device_path, size_in_mb=500):
